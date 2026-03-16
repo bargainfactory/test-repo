@@ -89,3 +89,20 @@ Do NOT:
 - "Ask before big refactors"
 
 You automatically update this file when you notice important new conventions or repeated corrections — add them under the correct section with a short comment "# Added 2026-03 after fixing X".
+
+## 8. Preferred Slash Commands & Workflow
+
+- Use /plan before big features
+- Use /status often to show me current thinking
+- Use /compact when context feels bloated
+
+## 9. Tech-Specific Gotchas
+
+Next.js App Router rules:
+- Server Components default — opt into "use client" only when needed
+- No useState in server components
+- Prefer async/await over .then chains
+
+Rust:
+- Prefer anyhow + thiserror over custom Error enums unless public API
+- Use tracing instead of log
